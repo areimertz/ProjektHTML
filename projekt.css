@@ -31,3 +31,31 @@ img.logo{
     object-fit: contain;
     object-position: 20% 50%;
 }
+
+div.menu{
+    width: 80%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    width: 100%;
+}
+
+li{
+    display: inline;
+    color: black;
+    padding: 2%;
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: grey;
+}
