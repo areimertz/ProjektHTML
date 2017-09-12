@@ -24,3 +24,10 @@ div.logo {
     height: 100%;
     float: left;
 }
+
+img.logo{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: 20% 50%;
+}
