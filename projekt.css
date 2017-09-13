@@ -78,7 +78,7 @@ a:hover{
     display: inline;
 }
 
-#aboutUsText {
+#aboutUsText , #contactUsText{
     font-size: 1 em;
     padding: 1% 60% 1% 3%;
 }
