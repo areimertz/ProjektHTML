@@ -35,6 +35,8 @@ div.menu{
     float: left;
     display: flex;
     align-items: center;
+    font-family: 'Josefin Slab', serif;
+    
 }
 
 ul{
@@ -57,7 +59,7 @@ a{
 a:hover{
     color: grey;
 }
-#Startsida {
+#home {
     width: 100%;
     height: 90%;
     background-image: url(apple.jpg);
@@ -67,7 +69,7 @@ a:hover{
 
 }
 
-#startsidaText{
+#homeText{
     font-size: 2em;
     position: relative;
     float: left;
@@ -76,6 +78,8 @@ a:hover{
     transform: translate(-50%, -50%);
     font-size-adjust: 100%;
     display: inline;
+    font-family: 'Josefin Slab', serif;
+    
 }
 
 #aboutUsText {
@@ -91,6 +95,8 @@ a:hover{
     transform: translate(-50%, -50%);
     font-size-adjust: 100%;
     display: inline;
+    font-family: 'Josefin Slab', serif;
+    
 }
 
 #bilder {

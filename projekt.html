@@ -5,6 +5,7 @@
         <script src="http://code.jquery.com/jquery-latest.js"></script> 
         <link rel="stylesheet" href="projekt.css"/>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Josefin+Slab" rel="stylesheet">
     </head>
     <body>
      <div id="header">
@@ -23,8 +24,8 @@
 
         </div>
      </div>
-     <div id="Startsida">
-         <h1 id="startsidaText"> Amanda och David </h1>
+     <div id="home">
+         <h1 id="homeText"> Amanda och David </h1>
      </div>
      <div class="container"  id="aboutUs" style="padding: 128px 16px">
         <h1 id="aboutUsRubrik"> About us </h1>
@@ -36,15 +37,15 @@
    </div>
      <div class="twocolumns" id="contactUs" style="padding: 128px 16px" >
             <h1 id="contactUsRubrik"> Contact us </h1>
-            <p id="contactUsText">  Hej </p>
+            <p id="contactUsText">  Vill ni kontakta oss med evetuella frågor eller funderingar? Fyll i formuläret nedan och skicka till oss så svarar vi inom kort! Mvh Amanda och David </p>
          <div class="formular">
-             <div class="formularHeader" > Skicka in klagomål </div>
+             <div class="formularHeader" > Skicka meddelande: </div>
                  <form action="alternativ">
-                         <input type="text" id="username" placeholder="name">
-                         <input type="text" id="number" placeholder="Mobilenumber 10 digits">
-                         <input type="text" id="email" placeholder="email">
-                         <textarea type="text" id="meddelande" placeholder="Start write..." cols="45" rows="5"></textarea>
-                         <input type="button" onclick="skickaFormular()" value="Submit">
+                         <input type="text" id="username" placeholder="Name">
+                         <input type="text" id="number" placeholder="Mobile, 10 digits">
+                         <input type="text" id="email" placeholder="E-mail">
+                         <textarea type="text" id="meddelande" placeholder="Message.." cols="45" rows="5"></textarea>
+                         <input type="button" onclick="skickaFormular()" value="Send message">
                          
                  </form>
              </div>
