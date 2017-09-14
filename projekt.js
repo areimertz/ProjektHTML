@@ -2,6 +2,7 @@
 var usernameElement = document.getElementById("username");
 var numberElement = document.getElementById("number");
 var emailElement = document.getElementById("email");
+var meddelandeElement = document.getElementById("meddelande");
 
 function validate(element, regex) {
     var value = element.value;
@@ -24,17 +25,12 @@ emailElement.addEventListener("keyup", function () {
 });
 
 
+meddelandeElement.addEventListener("keyup", function () {
+    validate(meddelandeElement, /([a-zA-Z0-9]){3,150}/ )
+});
 
-var meddelandeElement = document.getElementById("meddelande");
 
-meddelandeElement.addEventListener("keyup", function(){
-    var value = meddelandeElement.value;
-    var meddelanderegex = /([a-zA-Z0-9]){3,150}/
-    var isValid = meddelanderegex.test(value);
-    console.log(meddelanderegex.test(value));
 
-    meddelandeElement.style.backgroundColor = isValid ? "green" : "red";
-})
 
 function check(){
     var emailval = document.getElementById("email").value;
