@@ -39,13 +39,13 @@
             <h1 id="contactUsRubrik"> Contact us </h1>
             <p id="contactUsText">  Vill ni kontakta oss med evetuella frågor eller funderingar? Fyll i formuläret nedan och skicka till oss så svarar vi inom kort! Mvh Amanda och David </p>
          <div class="formular">
-             <div class="formularHeader" > Skicka meddelande: </div>
-                 <form action="alternativ">
-                         <input type="text" id="username" placeholder="Name">
-                         <input type="text" id="number" placeholder="Mobile, 10 digits">
-                         <input type="text" id="email" placeholder="E-mail">
-                         <textarea type="text" id="meddelande" placeholder="Message.." cols="45" rows="5"></textarea>
-                         <input type="button" onclick="skickaFormular()" value="Send message">
+             <div class="formularHeader" > Skicka in klagomål </div>
+                 <form onsubmit="return check();"  >
+                         <input type="text" id="username" placeholder="name">
+                         <input type="text" id="number" placeholder="Mobilenumber 10 digits">
+                         <input type="text" id="email" placeholder="email">
+                         <textarea type="text" id="meddelande" placeholder="Start write..." cols="45" rows="5"></textarea>
+                         <input type="submit" onclick="skickaFormular()" value="Submit">
                          
                  </form>
              </div>

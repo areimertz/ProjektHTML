@@ -1,7 +1,3 @@
-function skickaFormular() {
-    document.getElementById("formular");{
-    window.alert("Ditt formulär är skickat");
-}}
 
 var usernameElement = document.getElementById("username");
 var numberElement = document.getElementById("number");
@@ -48,3 +44,17 @@ meddelandeElement.addEventListener("keyup", function(){
 
     meddelandeElement.style.backgroundColor = isValid ? "green" : "red";
 })
+
+function check(){
+    var emailval = document.getElementById("email").value;
+    var namnval = document.getElementById("username").value;
+    var numberval = document.getElementById("number").value;
+    var meddelandeval = document.getElementById("meddelande").value;
+    if(namnval == null || namnval == "" || emailval == null || emailval == "" ){
+        alert("Fyll dina uppgifter korrekt");
+        return false;
+    }
+    return true;
+
+}
+
