@@ -37,3 +37,14 @@ emailElement.addEventListener("keyup", function(){
 
     emailElement.style.backgroundColor = isValid ? "green" : "red";
 })
+
+var meddelandeElement = document.getElementById("meddelande");
+
+meddelandeElement.addEventListener("keyup", function(){
+    var value = meddelandeElement.value;
+    var meddelanderegex = /([a-zA-Z0-9]){3,150}/
+    var isValid = meddelanderegex.test(value);
+    console.log(meddelanderegex.test(value));
+
+    meddelandeElement.style.backgroundColor = isValid ? "green" : "red";
+})
