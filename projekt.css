@@ -160,6 +160,22 @@ input[type="number"]{
     border: 2px solid steelblue;
 }
 
+#contactUsText{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em;
+}
+
+#contactUsRubrik{
+    font-size: 2em;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size-adjust: 100%;
+    font-family: 'Josefin Slab', serif;
+}
+
 @media only screen and (min-width: 768px){
     .twocolumns{
         width: 44%;
