@@ -4,7 +4,6 @@
         <title> Grupp 29 </title>
         <script src="http://code.jquery.com/jquery-latest.js"></script> 
         <link rel="stylesheet" href="projekt.css"/>
-        <script src="projekt.js"> </script>
         <meta charset="UTF-8">
     </head>
     <body>
@@ -41,17 +40,13 @@
          <div class="formular">
              <div class="formularHeader" > Skicka in klagomål </div>
                  <form action="alternativ">
-                     <div class="namnFormular">
-                        <label for="namn"></label>
-                        <input type="text" id="namn" placeholder="name">
-                     </div>
-                     <div class="emialForumular">
-                     <label for="email"></label>
-                     <input type="text" id="email" placeholder="email">
-                  </div>
-                  <input type="button" onclick="skickaFormular()" value="Submit">
+                         <input type="text" id="username" placeholder="name">
+                         <input type="text" id="number" placeholder="Mobilenumber 10 digits">
+                         <input type="text" id="email" placeholder="email">
+                         <input type="button" onclick="skickaFormular()" value="Submit">
                  </form>
              </div>
          </div>
+         <script src="projekt.js"> </script>
     </body>
 </html>
