@@ -75,3 +75,9 @@ paus = false;
 
 }
 document.getElementById("pausBtn").addEventListener("click",timer);
+
+function bytKnappText(){
+    var start = document.getElementById("pausBtn");
+    if(start.value=="Paus") start.value = "Start";
+    else start.value = "Paus";
+}
