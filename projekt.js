@@ -60,4 +60,18 @@ function bytBild() {
     }
     bilderna.src = a[index];
 }
-setInterval(bytBild,2500);
+var intervall = setInterval(bytBild,2500);
+var paus = false;
+
+function timer(){
+    if(!paus){
+        clearInterval(intervall);
+    paus = true;   
+}
+else{
+intervall = setInterval(bytBild, 2500);
+paus = false;
+}
+
+}
+document.getElementById("pausBtn").addEventListener("click",timer);
