@@ -48,6 +48,11 @@ ul{
     width: 100%;
 }
 
+p{
+    font-size: 1em;
+    font-family: 'Josefin Slab', serif;
+}
+
 li{
     display: inline;
     color: black;
