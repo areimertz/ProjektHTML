@@ -41,6 +41,7 @@ div.menu{
 h1{
     font-size: 3em;
     font-family: 'Josefin Slab', serif;
+    
 }
 
 ul{
@@ -86,23 +87,7 @@ a:hover{
     
 }
 
-#aboutUsText {
-    font-size: 1 em;
-}
 
-
-#aboutUsRubrik{
-    font-size: 2em;
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size-adjust: 100%;
-    display: inline;
-    font-family: 'Josefin Slab', serif;
-    
-}
 
 #trenderRubrik{
     font-size: 1em;
@@ -121,27 +106,9 @@ a:hover{
     padding: 0 125px;
 }
 
-.david{
-    width: 240px;
-    background-image: url("david.jpg");
-    height: 123px;
-    float: left;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
 
-.amanda{
-    width: 240px;
-    background-image: url("amanda.jpg");
-    height: 123px;
-    float: right;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
 form{
-    margin: 20px auto;
+   
     width: 320px;
     color: steelblue;
 }
@@ -188,13 +155,6 @@ div.container{
     font-size: 1em;
 }
 
-#contactUsRubrik{
-    font-size: 2em;
-   
-    float: left;
-    
-    font-family: 'Josefin Slab', serif;
-}
 
 .projektRubrik{
     font-size: 2em;
