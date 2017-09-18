@@ -86,6 +86,7 @@ a:hover{
     font-size: 1 em;
 }
 
+
 #aboutUsRubrik{
     font-size: 2em;
     position: relative;
@@ -99,6 +100,14 @@ a:hover{
     
 }
 
+#trenderRubrik{
+    font-size: 1em;
+    font-family: 'Josefin Slab', serif;¨
+    float: left;
+    margin: 5%;
+    padding: 5%;
+    
+}
 #bilder {
     width: 485px;
     display: block;

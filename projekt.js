@@ -9,7 +9,7 @@ function validate(element, regex) {
 
     var isValid = regex.test(value);
 
-    element.style.backgroundColor = isValid ? "white" : "red";
+    element.style.backgroundColor = isValid ? "green" : "red";
 }
 
 usernameElement.addEventListener("keyup", function(){
@@ -37,13 +37,10 @@ function check(){
     var namnval = document.getElementById("username").value;
     var numberval = document.getElementById("number").value;
     var meddelandeval = document.getElementById("meddelande").value;
-    if(namnval == null || namnval == "" || emailval == null || emailval == "" || numberval == null || numberval == "" || meddelandeval == null || meddelandeval == "" ){
-        alert("Du måste fylla i alla fälten");
+    if(namnval == null || namnval == "" || emailval == null || emailval == "" ){
+        alert("Fyll dina uppgifter korrekt");
         return false;
     }
-    document.forms["form"].submit();
-    document.forms["form"].reset();
-    alert("Ditt meddelande har nu skickats");
     return true;
 
 }
