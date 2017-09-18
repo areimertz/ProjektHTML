@@ -45,17 +45,16 @@ function check(){
 
 }
 
-var nextButton = document.getElementsByTagName("button")[0];
-var imgElement = document.getElementByTagName("img")[0];
-var bilder = [
-    "bild1.jpeg",
-    "bild2.png",
-    "bild3.jpg"
-];
 
 var index = 0;
-
-nextButton.addEventListener("click", function(){
-    index++;
-    imgElement.setAttribute("url", bilder[index]);
-})
+function bytBild() {
+    var a = ["bild2.png","bild3.jpg", "bild1.jpeg"]
+    document.getElementById("bilderna").setAttribute("src",a[index]);
+    
+    index = (index +1)
+    if(index>(a.length -1)){
+        index=0;
+    }
+    bilderna.src = a[index];
+}
+setInterval(bytBild,1000);
