@@ -9,7 +9,7 @@ function validate(element, regex) {
 
     var isValid = regex.test(value);
 
-    element.style.backgroundColor = isValid ? "green" : "red";
+    element.style.backgroundColor = isValid ? "white" : "red";
 }
 
 usernameElement.addEventListener("keyup", function(){
@@ -37,10 +37,13 @@ function check(){
     var namnval = document.getElementById("username").value;
     var numberval = document.getElementById("number").value;
     var meddelandeval = document.getElementById("meddelande").value;
-    if(namnval == null || namnval == "" || emailval == null || emailval == "" ){
+    if(namnval == null || namnval == "" || emailval == null || emailval == "" || numberval == "" || numberval == null || meddelandeval == "" || meddelandeval == null){
         alert("Fyll dina uppgifter korrekt");
         return false;
     }
+    
+    alert("Ditt formulär har skickats");
+    document.getElementById("form").reset();
     return true;
 
 }
@@ -48,7 +51,7 @@ function check(){
 
 var index = 0;
 function bytBild() {
-    var a = ["bild2.png","bild3.jpg", "bild1.jpeg"]
+    var a = ["bild1.jpg","bild44.png", "bild55.png"]
     document.getElementById("bilderna").setAttribute("src",a[index]);
     
     index = (index +1)
@@ -57,4 +60,4 @@ function bytBild() {
     }
     bilderna.src = a[index];
 }
-setInterval(bytBild,1000);
+setInterval(bytBild,2500);
