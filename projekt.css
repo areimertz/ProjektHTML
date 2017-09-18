@@ -102,12 +102,13 @@ a:hover{
 
 #trenderRubrik{
     font-size: 1em;
-    font-family: 'Josefin Slab', serif;¨
+    font-family: 'Josefin Slab', serif;
     float: left;
     margin: 5%;
     padding: 5%;
     
 }
+
 #bilder {
     width: 485px;
     display: block;
@@ -169,6 +170,15 @@ input[type="number"]{
     border: 2px solid steelblue;
 }
 
+div.container{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
 #contactUsText{
     font-family: 'Josefin Slab', serif;
     font-size: 1em;
@@ -176,12 +186,9 @@ input[type="number"]{
 
 #contactUsRubrik{
     font-size: 2em;
-    position: relative;
+   
     float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size-adjust: 100%;
+    
     font-family: 'Josefin Slab', serif;
 }
 
@@ -192,3 +199,7 @@ input[type="number"]{
         padding: 1% 3% 1% 3%;
     }
 }
+
+
+
+

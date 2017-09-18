@@ -45,3 +45,17 @@ function check(){
 
 }
 
+var nextButton = document.getElementsByTagName("button")[0];
+var imgElement = document.getElementByTagName("img")[0];
+var bilder = [
+    "bild1.jpeg",
+    "bild2.png",
+    "bild3.jpg"
+];
+
+var index = 0;
+
+nextButton.addEventListener("click", function(){
+    index++;
+    imgElement.setAttribute("url", bilder[index]);
+})
