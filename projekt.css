@@ -221,12 +221,19 @@ progress[value] {
     color: black; 
 }
 
-.html {width: 90%; background-color:lightblue;} 
-.css {width: 80%; background-color: lightblue;} 
-.js {width: 65%; background-color: lightblue;} 
-.sv{width: 100%; background-color: lightblue;}
-.en{width: 90%; background-color: lightblue;}
-.arab{width: 10%; background-color: lightblue;}
+.html {width: 90%; background-color:Thistle;} 
+.css {width: 80%; background-color: Thistle;} 
+.js {width: 65%; background-color: Thistle;} 
+.sv{width: 100%; background-color: Thistle;}
+.en{width: 90%; background-color: Thistle;}
+.arab{width: 10%; background-color: Thistle;}
+
+.davidHtml {width: 82%; background-color:Turquoise;} 
+.davidCss{width: 67%; background-color: Turquoise;}
+.davidJs{width: 75%; background-color: Turquoise;}
+.davidEn{width: 80%; background-color: Turquoise;}
+.davidSv{width: 100%; background-color: Turquoise;}
+
 
 
 
