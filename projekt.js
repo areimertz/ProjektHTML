@@ -81,3 +81,25 @@ function bytKnappText(){
     if(start.value=="Paus") start.value = "Start";
     else start.value = "Paus";
 }
+
+$(document).ready(function(){
+    $("#linkHome").click(function(){
+        $path = $("#home").offset().top;
+        $('body').animate({ scrollTop: $path}, 1000);
+    })
+
+
+    $("#linkContact").click(function(){
+        $path = $("#contactUs").offset().top;
+        $('body').animate({scrollTop: $path}, 1000);
+    })
+    $("#linkAboutUs").click(function(){
+        $path = $("#aboutUs").offset().top;
+        $('body').animate({scrollTop: $path}, 1000);
+    })
+    $("#linkPortfolio").click(function(){
+        $path = $("#portfolio").offset().top;
+        $('body').animate({scrollTop: $path}, 1000);
+    })
+
+})
