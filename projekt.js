@@ -105,17 +105,24 @@ $(document).ready(function(){
 })
 
 
-fetch("https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc")
+/*fetch("https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
-    console.log(data)
-});
 
-/*$(document).ready(function(){
-    $.ajax({ url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function(data){
+    console.log(data)
+});*/
+
+$(document).ready(function(){
+    $.ajax({ url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function (data){
     data.itmes.forEach(function(item){
 
-        $(document..append("<p>" + item.full_name + "</p>")
+        $(".omOss").append("<h1>" + item.full_name + "</h1>");
         })
     })
+});
+
+/*$.ajax({url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function (data) {
+    data.items.forEach(function(item) {
+       $(".omGrupp").append("<h1>" + item.full_name + "</h1>");
+    });
 })*/
