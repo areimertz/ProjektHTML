@@ -76,6 +76,7 @@ a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    object-fit: contain;
 
 }
 
@@ -101,14 +102,6 @@ a:hover{
     margin: 5%;
     padding: 5%;
     
-}
-
-#bilder {
-    width: 485px;
-    display: block;
-    margin: auto;
-    margin-top: 200px;
-    padding: 0 125px;
 }
 
 
@@ -148,10 +141,11 @@ input[type="number"]{
 
 div.container{
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 10%;
 
 }
 
@@ -176,6 +170,9 @@ div.container{
     height: 30%;
     background-repeat: no-repeat;
     background-size: 100%;
+    float: left;
+   
+    
 }
 
 #blakeBild{
