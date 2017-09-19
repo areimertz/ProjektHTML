@@ -1,3 +1,4 @@
+
 html, body{
     width: 100%;
     height: 100%;
@@ -51,6 +52,7 @@ h3{
     
     
 }
+
 
 
 ul{
@@ -205,20 +207,6 @@ div.container{
     margin-right: auto;
 }
 
-@media only screen and (min-width: 768px){
-    .twoColumns{
-        width: 44%;
-        float: left;
-        padding: 1% 3% 1% 3%;
-    }
-}
-
-progress[value] {
-    width: 250px;
-    height: 25px;
-    
-  }
-
 .staplar {
     width: 70%;
     background-color: #ddd; 
@@ -240,6 +228,18 @@ progress[value] {
 .davidJs{width: 75%; background-color: Turquoise;}
 .davidEn{width: 80%; background-color: Turquoise;}
 .davidSv{width: 100%; background-color: Turquoise;}
+
+
+
+
+@media only screen and (min-width: 768px){
+    .twoColumns{
+        width: 44%;
+        float: left;
+        padding: 1% 3% 1% 3%;
+    }
+}
+
 
 
 
