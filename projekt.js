@@ -105,16 +105,29 @@ $(document).ready(function(){
 
 
 
-fetch("https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc")
+fetch("https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
     var item = data.items[i];
     var element = document.createElement("p");
-    var text = document.createTextNode(item.full_name);
+    var text = document.createTextNode( item.name + "|"+ item.owner.login +"|"+ item.stargazers_count );
     element.appendChild(text);
     document.getElementById("trend").appendChild(element);
     console.log(item)
+    }
+});
+
+fetch("https://api.github.com/search/repositories?q=language:css&sort=stars&order=desc")
+.then(response => response.json())
+.then(data => {
+    for(var i = 0; i < 5; i++){
+    var items = data.items[i];
+    var element = document.createElement("p");
+    var texts = document.createTextNode( items.name + "|"+ items.owner.login +"|"+ items.stargazers_count );
+    element.appendChild(texts);
+    document.getElementById("trend").appendChild(element);
+    console.log(items)
     }
 });
 })
