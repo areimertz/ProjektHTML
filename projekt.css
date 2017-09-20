@@ -42,7 +42,6 @@ div.menu{
 h1{
     font-size: 3em;
     font-family: 'Josefin Slab', serif;
-    margin-left: 50px;
     text-align: center;
     
 }
@@ -62,6 +61,7 @@ ul{
 p{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
+   margin-left: auto;
 }
 
 li{
@@ -121,7 +121,7 @@ form{
    
     width: 320px;
     color: steelblue;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 input{
@@ -163,11 +163,7 @@ div.container{
 
 }
 
-#contactUsText{
-    font-family: 'Josefin Slab', serif;
-    font-size: 1em;
-    margin-left: 50px;
-}
+
 
 
 .projektRubrik{
