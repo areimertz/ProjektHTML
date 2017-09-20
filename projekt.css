@@ -112,7 +112,7 @@ a:hover{
 #trenderRubrik{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
-    float: left;
+    
     margin: 5%;
     padding: 5%;
     
@@ -272,8 +272,16 @@ div.container{
 .davidEn{width: 80%; background-color: Turquoise;}
 .davidSv{width: 100%; background-color: Turquoise;}
 
-
-
+#trendJavascript{
+    font-size: 1em;
+    font-family: 'Josefin Slab', serif;
+   margin-left: auto;
+}
+#trendCss{
+    font-size: 1em;
+    font-family: 'Josefin Slab', serif;
+   margin-left: auto;
+}
 
 @media only screen and (min-width: 768px){
     .twoColumns{

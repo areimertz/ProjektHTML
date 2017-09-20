@@ -111,43 +111,28 @@ fetch("https://api.github.com/search/repositories?q=language:javascript+created:
     for(var i = 0; i < 5; i++){
     var item = data.items[i];
     var name = data.items[i].name;
-    var link = data.items[i].html_url;
+    var htmlSida = data.items[i].html_url;
+    var stjarnor = data.items[i].stargazers_count;
+    var anvandare = data.items[i].owner.login;
+    var anvandarSida = data.items[i].owner.html_url;
     
-    $("#trendJavascript").append( " Namn " + "  <a href = '" + link + "'>" + name  + "</a>" + "|"+ item.owner.login +"|"+ item.stargazers_count + "<br>" );
+    $("#trendJavascript").append( " Namn: " + "  <a href = '" + htmlSida + "'>" + name  + "</a>" + "" +"  | "+" "+" Ägare: " +" <a href = '" + anvandarSida+ "'> "+ anvandare +" "+"</a>" +" |  Stjärnor: " + stjarnor + "<br>" );
    
     }
 });
-
-/*$.ajax({url:"https://api.github.com/search/repositories?q=language:css+created:>"+date()+"&sort=stars&order=desc"}).done(function(data, status) {
-if(status == 'success'){
-    for(var i = 0; i < 5; i++){
-        var name = data.items[i].name;
-        var linkWebbsida = data.items[i].html_url;
-        var owner_name = data.items[i].owner.login;
-        var amountStars = data.items[i].stargazers_count;
-        var owner_link = data.items[i].owner.html.url;
-        $("#trendCss").append(("<a href = '" + linkWebbsida + "'>" + name  + "</a" + "|"+ owner_name +"|"+ amountStars ));
-        
-    }
-    
-}
-});
-});*/
-
-
 
 
 fetch("https://api.github.com/search/repositories?q=language:css+created:>2017-09-13&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
-    var items = data.items[i];
-    var element = document.createElement("p");  
-    var texts = document.createTextNode( items.name  + "|"+ items.owner.login +"|"+ items.stargazers_count );
-   
-    element.appendChild(texts);
-    document.getElementById("trendCss").appendChild(element);
-    console.log(items)
+        var item = data.items[i];
+        var namnCss = data.items[i].name;
+        var cssSida = data.items[i].html_url;
+        var cssStjarnor = data.items[i].stargazers_count;
+        var cssAnvandare = data.items[i].owner.login;
+        var cssAnvandarSida = data.items[i].owner.html_url;
+        $("#trendCss").append( " Namn: " + "  <a href = '" + cssSida + "'>" + namnCss  + "</a>" + "" +"  | "+" "+" Ägare: " +" <a href = '" + cssAnvandarSida+ "'> "+ cssAnvandare +" "+"</a>" +" |  Stjärnor: " + cssStjarnor + "<br>" );
     }
 });
 });
