@@ -113,7 +113,7 @@ fetch("https://api.github.com/search/repositories?q=language:javascript&sort=sta
     var element = document.createElement("p");
     var text = document.createTextNode( item.name + "|"+ item.owner.login +"|"+ item.stargazers_count );
     element.appendChild(text);
-    document.getElementById("trend").appendChild(element);
+    document.getElementById("trendJavascript").appendChild(element);
     console.log(item)
     }
 });
@@ -126,7 +126,7 @@ fetch("https://api.github.com/search/repositories?q=language:css&sort=stars&orde
     var element = document.createElement("p");
     var texts = document.createTextNode( items.name + "|"+ items.owner.login +"|"+ items.stargazers_count );
     element.appendChild(texts);
-    document.getElementById("trend").appendChild(element);
+    document.getElementById("trendCss").appendChild(element);
     console.log(items)
     }
 });
