@@ -13,11 +13,11 @@ function validate(element, regex) {
 }
 
 usernameElement.addEventListener("keyup", function(){
-    validate(usernameElement, /([a-zA-Z]){3,}/)
+    validate(usernameElement, /^[a-zA-Z -]{3,}$/)
 });
 
 numberElement.addEventListener("keyup", function () {
-    validate(numberElement, /([0-9]){10,}/)
+    validate(numberElement, /^[0-9 -+]{10,}$/)
 });
 
 emailElement.addEventListener("keyup", function () {
@@ -26,7 +26,7 @@ emailElement.addEventListener("keyup", function () {
 
 
 meddelandeElement.addEventListener("keyup", function () {
-    validate(meddelandeElement, /([a-zA-Z0-9]){3,150}/ )
+    validate(meddelandeElement, /([a-zA-Z0-9._%+-()]){3,150}/ )
 });
 
 
