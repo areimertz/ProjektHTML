@@ -140,7 +140,7 @@ input{
     font-size: inherit;
 }
 
-textarea[type="text"]{
+#meddelande{
     display: block;
     margin-bottom: 25px;
     width: 100%;

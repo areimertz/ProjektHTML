@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="sv">
     <head>
         <title> Grupp 29 </title>
         <script src="http://code.jquery.com/jquery-latest.js"></script> 
@@ -7,7 +7,7 @@
         <script src="jquery-1.10.2.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Josefin+Slab" rel="stylesheet">
+        
     </head>
     <body>
      <div id="header">
@@ -18,10 +18,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#contactUs" item button id="linkContact"> Kontakta oss </a></li>
-                <li><a href="#portfolio" item button id="linkPortfolio"> Portfolio </a></li>
-                <li><a href="#aboutUs" item button id="linkAboutUs"> Om oss</a></li>
-                <li><a href="#home" item button id="linkHome"> Hem  </a></li>
+                <li><a href="#contactUs"  id="linkContact"> Kontakta oss </a></li>
+                <li><a href="#portfolio" id="linkPortfolio"> Portfolio </a></li>
+                <li><a href="#aboutUs"  id="linkAboutUs"> Om oss</a></li>
+                <li><a href="#home" id="linkHome"> Hem  </a></li>
                 
             </ul>
 
@@ -53,15 +53,14 @@
                     </div>
                  </div>     
                 
-    </div>
     <div class="container" id="amandaSida" >
         <h1>Amanda Reimertz</h1>
-        <div class="twoColumns" id="bildText">
+        <div class="twoColumns" class="omOss">
         
         <img src="blake.jpg" alt="bild" id="blakeBild">
         <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
         </div>
-        <div class="twoColumns" id="tabell">
+        <div class="twoColumns" class="tabell">
             <h3> Skills </h3> 
             
             <p>HTML</p>
@@ -105,7 +104,7 @@
 
     <div class="container" id="davidSida" >
          <h1>David Jörgensén</h1>
-    <div class="twoColumns" id="bildText">
+    <div class="twoColumns" class="omOss">
        
         <img src="johnny.png" alt="bild" id="johnnyBild">
         <p id="textDavid">I motsättning till vad många tror, är inte Lorem Ipsum slumpvisa ord. Det har sina rötter i ett stycke klassiskt litteratur på latin från 45 år före år 0, och är alltså över 2000 år gammalt. Richard McClintock, en professor i latin på Hampden-Sydney College i Virginia, översatte ett av de mer ovanliga orden, consectetur, från ett stycke Lorem Ipsum och fann dess ursprung genom att studera användningen av dessa ord i klassisk litteratur. Lorem Ipsum kommer från styckena 1.10.32 och 1.10.33 av "de Finibus Bonorum et Malorum" (Ytterligheterna av ont och gott) av Cicero, skriven 45 före år 0. Boken är en avhandling i teorier om etik, och var väldigt populär under renäsanssen. Den inledande meningen i Lorem Ipsum, "Lorem Ipsum dolor sit amet...", kommer från stycke 1.10.32.  
@@ -113,7 +112,7 @@
             <br/>   
             Den ursprungliga Lorem Ipsum-texten från 1500-talet är återgiven nedan för de intresserade. Styckena 1.10.32 och 1.10.33 från "de Finibus Bonorum et Malorum" av Cicero hittar du också i deras originala form, åtföljda av de engelska översättningarna av H. Rackham från 1914.</p>
     </div>
-    <div class="twoColumns" id="tabell">
+    <div class="twoColumns" class="tabell">
             <h3> Skills </h3> 
             <p>HTML</p>
             <div class="staplar">
@@ -145,8 +144,8 @@
    
     <div class="container" id="portfolio" >
         <h1> Portfolio </h1>
-           <input type="button" id="pausBtn" value="Paus" onclick="bytKnappText()" > </input>
-              <img id="bilderna">
+           <input type="button" id="pausBtn" value="Paus" onclick="bytKnappText()" > 
+              <img src="" alt="bildSpel" id="bilderna">
               
         <div class="twoColumns" id="projekt1">
             <h1 class="projektRubrik"> Projekt 1</h1>
@@ -168,13 +167,14 @@
                          <input type="text" id="username" placeholder="Namn" title="Förnamn och Efternamn">
                          <input type="text" id="number" placeholder="Mobil nr, 10 siffror" title="0701234567" >
                          <input type="text" id="email" placeholder="E-mail, text@text.text" title="Anders@andersson.com">
-                         <textarea type="text" id="meddelande" placeholder="Meddelande" cols="45" rows="5"></textarea>
+                         <textarea id="meddelande" placeholder="Meddelande" cols="45" rows="5"></textarea>
                          <input type="submit" onclick="skickaFormular()" value="Skicka">
                          
                  </form>
              </div>
             </div>
             <div class="twoColumns" id="contactUsMap">
+                    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Josefin+Slab" rel="stylesheet">
              <div id="map"></div>
             
          </div></div>
