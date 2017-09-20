@@ -101,6 +101,14 @@ $(document).ready(function(){
         $path = $("#portfolio").offset().top;
         $('body').animate({scrollTop: $path}, 1000);
     })
+    $("#linkAmanda").click(function(){
+        $path = $("#amandaSida").offset().top;
+        $('body').animate({scrollTop: $path}, 1000);
+    })
+    $("#linkDavid").click(function(){
+        $path = $("#davidSida").offset().top;
+        $('body').animate({scrollTop: $path}, 1000);
+    })
 
 
 
