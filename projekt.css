@@ -63,6 +63,9 @@ p{
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
 }
+#textOmOss{
+    text-align: center;
+}
 
 li{
     display: inline;
