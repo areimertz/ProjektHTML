@@ -102,14 +102,23 @@ $(document).ready(function(){
         $('body').animate({scrollTop: $path}, 1000);
     })
 
-})
+
 
 
 fetch("https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
-    console.log(data)
+    for(var i = 0; i < 5; i++){
+    var item = data.items[i];
+    var element = document.createElement("p");
+    var text = document.createTextNode(item.full_name);
+    element.appendChild(text);
+    document.getElementById("trend").appendChild(element);
+    console.log(item)
+    }
 });
+})
+
 
 /*$(document).ready(function(){
     $.ajax({ url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function(data){
