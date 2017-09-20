@@ -105,32 +105,52 @@ $(document).ready(function(){
 
 
 
-fetch("https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc")
+fetch("https://api.github.com/search/repositories?q=language:javascript+created:>2017-09-13&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
     var item = data.items[i];
-    var element = document.createElement("p");
-    var text = document.createTextNode( item.name + "|"+ item.owner.login +"|"+ item.stargazers_count );
-    element.appendChild(text);
-    document.getElementById("trendJavascript").appendChild(element);
-    console.log(item)
+    var name = data.items[i].name;
+    var link = data.items[i].html_url;
+    
+    $("#trendJavascript").append( " Namn " + "  <a href = '" + link + "'>" + name  + "</a>" + "|"+ item.owner.login +"|"+ item.stargazers_count + "<br>" );
+   
     }
 });
 
-fetch("https://api.github.com/search/repositories?q=language:css&sort=stars&order=desc")
+/*$.ajax({url:"https://api.github.com/search/repositories?q=language:css+created:>"+date()+"&sort=stars&order=desc"}).done(function(data, status) {
+if(status == 'success'){
+    for(var i = 0; i < 5; i++){
+        var name = data.items[i].name;
+        var linkWebbsida = data.items[i].html_url;
+        var owner_name = data.items[i].owner.login;
+        var amountStars = data.items[i].stargazers_count;
+        var owner_link = data.items[i].owner.html.url;
+        $("#trendCss").append(("<a href = '" + linkWebbsida + "'>" + name  + "</a" + "|"+ owner_name +"|"+ amountStars ));
+        
+    }
+    
+}
+});
+});*/
+
+
+
+
+fetch("https://api.github.com/search/repositories?q=language:css+created:>2017-09-13&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
     var items = data.items[i];
-    var element = document.createElement("p");
-    var texts = document.createTextNode( items.name + "|"+ items.owner.login +"|"+ items.stargazers_count );
+    var element = document.createElement("p");  
+    var texts = document.createTextNode( items.name  + "|"+ items.owner.login +"|"+ items.stargazers_count );
+   
     element.appendChild(texts);
     document.getElementById("trendCss").appendChild(element);
     console.log(items)
     }
 });
-})
+});
 
 function myMap() {
     var mapOptions = {
@@ -140,14 +160,3 @@ function myMap() {
     }
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
-
-
-/*$(document).ready(function(){
-    $.ajax({ url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function(data){
-    data.itmes.forEach(function(item){
-
-        $(document..append("<p>" + item.full_name + "</p>")
-        })
-    })
-})*/
-
