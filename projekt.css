@@ -267,11 +267,13 @@ div.container{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
+   line-height: 2;
 }
 #trendCss{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
+   line-height: 2;
 }
 
 @media only screen and (min-width: 768px){
