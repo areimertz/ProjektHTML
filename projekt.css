@@ -222,16 +222,7 @@ div.container{
     margin-left: 20px;
     margin-top: 20px;
 }
-@media only screen and (max-width:768px){
-    #bild1{
-        width: 100%;
-       
-    }
-    #bild2{
-        width: 100%;
-       
-    }  
-}
+
 
 @media only screen and (min-width:768px){
   #bild1{
@@ -242,12 +233,7 @@ div.container{
     
 
 }
-#bild2{
-    width: 40%;
-    height: 50%;
-    margin-left: 250px;
-    float: left;
-}  
+
 }
 
 .staplar {
