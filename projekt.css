@@ -110,7 +110,6 @@ a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size-adjust: 100%;
     display: inline;
     font-family: 'Josefin Slab', serif;
     
@@ -121,7 +120,6 @@ a:hover{
 #trenderRubrik{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
-    
     margin: 5%;
     padding: 5%;
     

@@ -110,10 +110,12 @@ $(document).ready(function(){
         $('body').animate({scrollTop: $path}, 1000);
     })
 
+var datumVecka = new Date();
+datumVecka.setDate(datumVecka.getDate()-7);
+var dagensDatum = datumVecka.toISOString().slice(0,10)
 
 
-
-fetch("https://api.github.com/search/repositories?q=language:javascript+created:>2017-09-13&sort=stars&order=desc")
+fetch("https://api.github.com/search/repositories?q=language:javascript+created:>" + dagensDatum + "&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
@@ -130,7 +132,7 @@ fetch("https://api.github.com/search/repositories?q=language:javascript+created:
 });
 
 
-fetch("https://api.github.com/search/repositories?q=language:css+created:>2017-09-13&sort=stars&order=desc")
+fetch("https://api.github.com/search/repositories?q=language:css+created:" + dagensDatum + "&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
     for(var i = 0; i < 5; i++){
