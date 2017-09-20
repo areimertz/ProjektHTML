@@ -153,7 +153,7 @@
 
      <div  class="container" id="contactUs" >
             <h1> Contact us </h1>
-            <br />
+            <div class="twoColumns" id="contactUsFormular">
             <p id="contactUsText">  Vill ni kontakta oss med evetuella frågor eller funderingar? Fyll i formuläret nedan och skicka till oss så svarar vi inom kort!  </p>
          <div class="formular">
                  <form onsubmit="return check();" id="form" >
@@ -165,8 +165,13 @@
                          
                  </form>
              </div>
-         </div>
+            </div>
+            <div class="twoColumns" id="contactUsMap">
+             <div id="map"></div>
+            
+         </div></div>
          
          <script src="projekt.js"> </script>
+         <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     </body>
 </html>

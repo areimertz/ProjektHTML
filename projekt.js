@@ -119,6 +119,15 @@ fetch("https://api.github.com/search/repositories?q=topic:javascript&sort=stars&
 });
 })
 
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(59.254083, 15.249028),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
 
 /*$(document).ready(function(){
     $.ajax({ url: "https://api.github.com/search/repositories?q=topic:javascript&sort=stars&order=desc"}).done(function(data){

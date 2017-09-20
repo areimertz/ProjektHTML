@@ -216,6 +216,14 @@ div.container{
     width: 50%;
     float: left;
 }
+
+#map{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 @media only screen and (max-width:768px){
     #bild1{
         width: 100%;
