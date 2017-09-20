@@ -88,11 +88,13 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 100%;
     object-fit: contain;
+   
 
 }
 
 #homeText{
   
+   
     font-size: 2em;
     position: relative;
     float: left;
