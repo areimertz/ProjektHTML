@@ -4,6 +4,13 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url("bakgrund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+
 }
 
 #header {
