@@ -1,4 +1,4 @@
-
+/* Regex för formuläret så man har fyllt i rätt annars ändras färgen på fälten till rött*/
 var usernameElement = document.getElementById("username");
 var numberElement = document.getElementById("number");
 var emailElement = document.getElementById("email");
@@ -31,7 +31,7 @@ meddelandeElement.addEventListener("keyup", function () {
 
 
 
-
+/* Kontrollerar fälten på formuläret att man fyllt i/korrekt text */
 function check(){
     var emailval = document.getElementById("email").value;
     var namnval = document.getElementById("username").value;
@@ -48,7 +48,7 @@ function check(){
 
 }
 
-
+/* Funktion för bildspelet där bilderna ändras vid intervallen av 2,5 sekund */
 var index = 0;
 function bytBild() {
     var a = ["bild1.jpg","bild44.png", "bild55.png"]
@@ -76,19 +76,19 @@ paus = false;
 }
 document.getElementById("pausBtn").addEventListener("click",timer);
 
+/* Funktion där texten på paus-knappen ändras till start vi exikvering*/
 function bytKnappText(){
     var start = document.getElementById("pausBtn");
     if(start.value=="Paus") start.value = "Start";
     else start.value = "Paus";
 }
 
+/* Animering med en scrollfunktion när man klickar sig vidare via menyn och länkar */
 $(document).ready(function(){
     $("#linkHome").click(function(){
         $path = $("#home").offset().top;
         $('body').animate({ scrollTop: $path}, 1000);
     })
-
-
     $("#linkContact").click(function(){
         $path = $("#contactUs").offset().top;
         $('body').animate({scrollTop: $path}, 1000);
@@ -110,11 +110,13 @@ $(document).ready(function(){
         $('body').animate({scrollTop: $path}, 1000);
     })
 
+
+/* Skapar en funktion för att hämta senaste veckans api */    
 var datumVecka = new Date();
 datumVecka.setDate(datumVecka.getDate()-7);
 var dagensDatum = datumVecka.toISOString().slice(0,10)
 
-
+/* Gör en fetch för att hämta Github api trend senaste veckan och printar ut resultatet med länkar till sidorna */
 fetch("https://api.github.com/search/repositories?q=language:javascript+created:>" + dagensDatum + "&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
@@ -131,7 +133,7 @@ fetch("https://api.github.com/search/repositories?q=language:javascript+created:
     }
 });
 
-
+/* Gör en fetch för att hämta Github api trend senaste veckan och printar ut resultatet med länkar till sidorna */
 fetch("https://api.github.com/search/repositories?q=language:css+created:" + dagensDatum + "&sort=stars&order=desc")
 .then(response => response.json())
 .then(data => {
@@ -147,6 +149,7 @@ fetch("https://api.github.com/search/repositories?q=language:css+created:" + dag
 });
 });
 
+/* Funktion för kartan där vi hämtar ut kordinaterna för Örebro */
 function myMap() {
     var mapOptions = {
         center: new google.maps.LatLng(59.254083, 15.249028),
