@@ -1,4 +1,4 @@
-
+/* Sätter en bakgrundsbild med placering fixed */
 html, body{
     width: 100%;
     height: 100%;
@@ -8,11 +8,8 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
-    
-
 }
-
+/* Sätter måtten för diven på headern */
 #header {
     width: 100%;
     height: 10%;
@@ -24,12 +21,13 @@ html, body{
     position: fixed;
 }
 
+/* Storlek på logotypens div */
 div.logo {
     width: 20%;
     height: 100%;
     float: left;
 }
-
+/* Storlek på logotypen och dess position */
 img.logo{
     height: 100%;
     width: 100%;
@@ -37,6 +35,7 @@ img.logo{
     object-position: 20% 50%;
 }
 
+/* Storlek på menyns div */
 div.menu{
     width: 80%;
     height: 100%;
@@ -46,38 +45,47 @@ div.menu{
     font-family: 'Josefin Slab', serif;
     
 }
+
+/* Ger alla rubriker ett utseende */
 h1{
     font-size: 3em;
     font-family: 'Josefin Slab', serif;
     text-align: center;
     
 }
+
+/* Ger alla rubriker ett utseende */
 h2{
     font-size: 40px;
     font-family: 'Josefin Slab', serif; 
 }
+
+/* Ger alla rubriker ett utseende */
 h3{
     font-size: 20px;
     font-family: 'Josefin Slab', serif;  
 }
 
-
-
+/* Ger listan en storlek */
 ul{
     width: 100%;
 }
 
+/* Ger alla paragrafer ett utseende */
 p{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
 }
+
+/* Ger texten ett utseende */
 #textOmOss{
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
 }
 
+/* Ger listan ett utseende och position */
 li{
     display: inline;
     color: black;
@@ -87,15 +95,18 @@ li{
     float: right;
 }
 
+/* Ger alla länkar ett utseende */
 a{
     color: black;
     font-family: 'Josefin Slab', serif;
-
 }
 
+/* Ger länken ett nytt utseende när man placerar musen över */
 a:hover{
     color: grey;
 }
+
+/* Ger statsidans bild placering och storlek */
 #home {
     width: 100%;
     height: 90%;
@@ -104,13 +115,10 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 100%;
     object-fit: contain;
-   
-
 }
 
+/* Ger texten på startsidan placering och storlek */
 #homeText{
-  
-   
     font-size: 2em;
     position: relative;
     float: left;
@@ -119,27 +127,24 @@ a:hover{
     transform: translate(-50%, -50%);
     display: inline;
     font-family: 'Josefin Slab', serif;
-    
 }
 
-
-
+/* Ger rubriken ett utseende och placering */
 #trenderRubrik{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
     margin: 5%;
-    padding: 5%;
-    
+    padding: 5%;  
 }
 
-
+/* Ger vårat formulär storlek och färg */
 form{
-   
     width: 320px;
     color: steelblue;
     margin-left: 20px;
 }
 
+/* Utseende för alla fält i formuläret, input är alla fälten */
 input{
     padding: 10px;
     font-size: inherit;
@@ -168,6 +173,7 @@ input[type="number"]{
     border: 2px solid steelblue;
 }
 
+/* Ger classen ett utseende som delar upp hela hemsidan */
 div.container{
     width: 100%;
     height: auto;
@@ -176,32 +182,24 @@ div.container{
     background-size: 100%;
     padding-top: 10%;
     min-height: 1000px;
-
 }
 
-
-
-
+/* Ger rubriken ett utseende */
 .projektRubrik{
     font-size: 2em;
      font-family: 'Josefin Slab', serif;
 }
 
-.projektText{
-    font-size: 1em;
-    font-family: 'Josefin Slab', serif;
-}
-
+/* Ger bilderna för bildspelet placering och storlek*/
 #bilderna{
     width: 100%;
     height: 30%;
     background-repeat: no-repeat;
     background-size: 100%;
-    float: left;
-   
-    
+    float: left; 
 }
 
+/* Ger bilden storlek och position */
 #blakeBild{
     width: 25%;
     height: 35%;
@@ -211,6 +209,7 @@ div.container{
     margin-right: auto;
 }
 
+/* Ger bilden storlek och position */
 #johnnyBild{
     width: 25%;
     height: 35%;
@@ -220,43 +219,41 @@ div.container{
     margin-right: auto;
 }
 
-
-.bildOmOss{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    width: 50%;
-    float: left;
-}
-
+/* Kartans placering och storlek */
 #map{
     width: 400px;
     height: 400px;
-    background-color: blue;
     margin-left: 20px;
     margin-top: 20px;
 }
 
+/* placering av rubrik */
 .vartTeam{
     margin-left: 50px;
-
 }
 
+/* Ger länk storlek */
 #linkAmanda{
     font-size: 20px;
 }
+
+/* Ger länk storlek */
 #linkDavid{
     font-size: 20px;
 }
+
+/* Ger progressbar storlek och färg */
 .staplar {
     width: 70%;
     background-color: #ddd; 
 }
 
+/* Ger text i progressbar färg */
 .skills {
     color: black; 
 }
 
+/* Ger progressbar färg och sin längd */
 .html {width: 90%; background-color:Thistle;} 
 .css {width: 80%; background-color: Thistle;} 
 .js {width: 65%; background-color: Thistle;} 
@@ -270,12 +267,15 @@ div.container{
 .davidEn{width: 80%; background-color: Turquoise;}
 .davidSv{width: 100%; background-color: Turquoise;}
 
+/* Ger api-datan ett utseende */
 #trendJavascript{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
    line-height: 2;
 }
+
+/* Ger api-datan ett utseende */
 #trendCss{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
@@ -283,6 +283,7 @@ div.container{
    line-height: 2;
 }
 
+/* Ett speciellt utseende när skärmen är mer än 768px */
 @media only screen and (min-width: 768px){
     .twoColumns{
         width: 44%;
@@ -290,6 +291,8 @@ div.container{
         padding: 1% 3% 1% 3%;
     }
 }
+
+/* Ett speciellt utseende när skärmen är mindre än 768px */
 @media only screen and (max-width: 768px){
     #map{
         width: 200px;
@@ -297,6 +300,7 @@ div.container{
         margin-left: 20px;
         margin-top: 20px;
     }
+    /* Ändrar storlek på menyn så den blir anpassad för mindre skärm */
     div.menu{
         width: 80%;
         height: 100%;
@@ -306,7 +310,7 @@ div.container{
         font-family: 'Josefin Slab', serif;
         
     }
-
+    /* Ändrar storlek på listan i menyn så den blir anpassad för mindre skärm */
     li{
         display: inline;
         color: black;
@@ -319,6 +323,8 @@ div.container{
 ul{
     width: 100%;
 }
+
+/* Ändrar storlek på formuläret så den blir anpassad för mindre skärm */
 form{
     
      width: 280px;
@@ -353,22 +359,26 @@ form{
      width: 100%;
      border: 2px solid steelblue;
  }
+
+ /* Ändrar storlek på api-datan så den blir anpassad för mindre skärm */
  #trendJavascript{
     font-size: 12px;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
    line-height: 2;
 }
+
 #trendCss{
     font-size: 12px;
     font-family: 'Josefin Slab', serif;
    margin-left: auto;
    line-height: 2;
 }
+
+/* Ändrar position på länkarna så den blir anpassad för mindre skärm */
 .vartTeam{
     margin-left: 50px;
     text-align: center;
-
 }
 
 #linkAmanda{
@@ -376,12 +386,14 @@ form{
   display: block;
   text-align: center;
 }
+
 #linkDavid{
     font-size: 20px;
     display: block;
     text-align: center;
     
 }
+
 }
 
 
