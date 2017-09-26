@@ -44,7 +44,6 @@ div.menu{
     display: flex;
     align-items: center;
     font-family: 'Josefin Slab', serif;
-    
 }
 
 /* Ger alla rubriker ett utseende */
@@ -52,7 +51,6 @@ h1{
     font-size: 3em;
     font-family: 'Josefin Slab', serif;
     text-align: center;
-    
 }
 
 /* Ger alla rubriker ett utseende */
@@ -76,7 +74,7 @@ ul{
 p{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
-   margin-left: auto;
+    margin-left: auto;
 }
 
 /* Ger texten ett utseende */
@@ -272,16 +270,16 @@ div.container{
 #trendJavascript{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
-   margin-left: auto;
-   line-height: 2;
+    margin-left: auto;
+    line-height: 2;
 }
 
 /* Ger api-datan ett utseende */
 #trendCss{
     font-size: 1em;
     font-family: 'Josefin Slab', serif;
-   margin-left: auto;
-   line-height: 2;
+    margin-left: auto;
+    line-height: 2;
 }
 
 /* Ett speciellt utseende när skärmen är mer än 768px */
@@ -326,8 +324,7 @@ ul{
 }
 
 /* Ändrar storlek på formuläret så den blir anpassad för mindre skärm */
-form{
-    
+form{ 
      width: 280px;
      color: steelblue;
      margin-left: 20px;
@@ -365,15 +362,15 @@ form{
  #trendJavascript{
     font-size: 12px;
     font-family: 'Josefin Slab', serif;
-   margin-left: auto;
-   line-height: 2;
+    margin-left: auto;
+    line-height: 2;
 }
 
 #trendCss{
     font-size: 12px;
     font-family: 'Josefin Slab', serif;
-   margin-left: auto;
-   line-height: 2;
+    margin-left: auto;
+    line-height: 2;
 }
 
 /* Ändrar position på länkarna så den blir anpassad för mindre skärm */
@@ -384,8 +381,8 @@ form{
 
 #linkAmanda{
     font-size: 20px;
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 #linkDavid{
